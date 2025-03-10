@@ -1,7 +1,10 @@
 public class Point {
-    private double x;
+    private Double x;
     private double y;
 
+
+    public Point() {
+    }
 
     public double getX() {
         return x;
@@ -19,15 +22,16 @@ public class Point {
         this.y = y;
     }
 
-    public void setPoint(){
-        this.x = 0;
-        this.y = 0;
-    }
-
     public Point(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
