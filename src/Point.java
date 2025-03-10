@@ -34,4 +34,8 @@ public class Point {
                 ", y=" + y +
                 '}';
     }
+    public Point(Point tocopy){
+        this.x = tocopy.getX();
+        this.y = tocopy.getY();
+    }
 }
